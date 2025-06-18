@@ -81,14 +81,14 @@ Please change the parent <Route path="${w}"> to <Route path="${w==="/"?"*":`${w}
     grid-column: 3 / 4;
     position: absolute;
     top: 100%;
-    right: ${({isOpen:t})=>t?"0":"-100%"};
+    right: ${({$isOpen:t})=>t?"0":"-100%"};
     background-color: var(--bg); /* 使用CSS变量 */
     padding: 1rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
     width: 100%; /* 确保在移动视图下占据全宽 */
     text-align: center; /* 菜单项居中 */
-    display: ${({isOpen:t})=>t?"flex":"none"}; /* 在移动视图下根据isOpen显示/隐藏 */
+    display: ${({$isOpen:t})=>t?"flex":"none"}; /* 在移动视图下根据isOpen显示/隐藏 */
     left: 0;
   }
 `,B3=qe.div`
@@ -197,7 +197,7 @@ Please change the parent <Route path="${w}"> to <Route path="${w==="/"?"*":`${w}
   @media (max-width: 768px) {
     width: 30px; /* 设置固定宽度 */
   }
-`,I3=()=>{const{t}=Kl(),{theme:n,toggleTheme:a}=z_(),{toggleLanguage:i}=Kl(),[o,c]=g.useState(!1),s=()=>{c(!o)};return fe.jsxs(k3,{children:[fe.jsx(H3,{children:"HYC Blog"}),fe.jsxs(U3,{children:[fe.jsx(gh,{onClick:a,title:t.theme_toggle_label,children:n==="light"?"🌙":"☀️"}),fe.jsx(ob,{onClick:i,children:t.lang_toggle_label})]}),fe.jsx(F3,{onClick:s,children:"☰"}),fe.jsx(P3,{isOpen:o,onMouseLeave:()=>c(!1),children:fe.jsxs(B3,{children:[fe.jsx(V3,{to:"/",onClick:()=>c(!1),children:t.home}),fe.jsx(lb,{href:"https://weibo.com/u/6885353494",target:"_blank",rel:"noopener noreferrer",onClick:()=>c(!1),children:t.tech_blog}),fe.jsx(lb,{href:"https://blog.csdn.net/qq_45104795?type=blog",target:"_blank",rel:"noopener noreferrer",onClick:()=>c(!1),children:t.life_blog})]})}),fe.jsxs(q3,{children:[fe.jsx(gh,{onClick:a,title:t.theme_toggle_label,children:n==="light"?"🌙":"☀️"}),fe.jsx(ob,{onClick:i,children:t.lang_toggle_label})]})]})},G3=({children:t})=>{const{t:n}=Kl();return fe.jsxs("div",{className:"container",children:[fe.jsx(I3,{}),fe.jsx("main",{children:t}),fe.jsxs("footer",{children:["© 2025 HYC Blog. ",n.all_rights_reserved]})]})},K3=""+new URL("hyc-DvsQNzsi.png",import.meta.url).href,GS=g.createContext({});var Lv={exports:{}};/*!
+`,I3=()=>{const{t}=Kl(),{theme:n,toggleTheme:a}=z_(),{toggleLanguage:i}=Kl(),[o,c]=g.useState(!1),s=()=>{c(!o)};return fe.jsxs(k3,{children:[fe.jsx(H3,{children:"HYC Blog"}),fe.jsxs(U3,{children:[fe.jsx(gh,{onClick:a,title:t.theme_toggle_label,children:n==="light"?"🌙":"☀️"}),fe.jsx(ob,{onClick:i,children:t.lang_toggle_label})]}),fe.jsx(F3,{onClick:s,children:"☰"}),fe.jsx(P3,{$isOpen:o,onMouseLeave:()=>c(!1),children:fe.jsxs(B3,{children:[fe.jsx(V3,{to:"/",onClick:()=>c(!1),children:t.home}),fe.jsx(lb,{href:"https://weibo.com/u/6885353494",target:"_blank",rel:"noopener noreferrer",onClick:()=>c(!1),children:t.tech_blog}),fe.jsx(lb,{href:"https://blog.csdn.net/qq_45104795?type=blog",target:"_blank",rel:"noopener noreferrer",onClick:()=>c(!1),children:t.life_blog})]})}),fe.jsxs(q3,{children:[fe.jsx(gh,{onClick:a,title:t.theme_toggle_label,children:n==="light"?"🌙":"☀️"}),fe.jsx(ob,{onClick:i,children:t.lang_toggle_label})]})]})},G3=({children:t})=>{const{t:n}=Kl();return fe.jsxs("div",{className:"container",children:[fe.jsx(I3,{}),fe.jsx("main",{children:t}),fe.jsxs("footer",{children:["© 2025 HYC Blog. ",n.all_rights_reserved]})]})},K3=""+new URL("hyc-DvsQNzsi.png",import.meta.url).href,GS=g.createContext({});var Lv={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see
 	http://jedwatson.github.io/classnames
@@ -266,7 +266,7 @@ ${o}
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var yb;function jR(){if(yb)return Mt;yb=1;var t=Symbol.for("react.element"),n=Symbol.for("react.portal"),a=Symbol.for("react.fragment"),i=Symbol.for("react.strict_mode"),o=Symbol.for("react.profiler"),c=Symbol.for("react.provider"),s=Symbol.for("react.context"),d=Symbol.for("react.server_context"),h=Symbol.for("react.forward_ref"),v=Symbol.for("react.suspense"),p=Symbol.for("react.suspense_list"),y=Symbol.for("react.memo"),b=Symbol.for("react.lazy"),E=Symbol.for("react.offscreen"),C;C=Symbol.for("react.module.reference");function _(x){if(typeof x=="object"&&x!==null){var R=x.$$typeof;switch(R){case t:switch(x=x.type,x){case a:case o:case i:case v:case p:return x;default:switch(x=x&&x.$$typeof,x){case d:case s:case h:case b:case y:case c:return x;default:return R}}case n:return R}}}return Mt.ContextConsumer=s,Mt.ContextProvider=c,Mt.Element=t,Mt.ForwardRef=h,Mt.Fragment=a,Mt.Lazy=b,Mt.Memo=y,Mt.Portal=n,Mt.Profiler=o,Mt.StrictMode=i,Mt.Suspense=v,Mt.SuspenseList=p,Mt.isAsyncMode=function(){return!1},Mt.isConcurrentMode=function(){return!1},Mt.isContextConsumer=function(x){return _(x)===s},Mt.isContextProvider=function(x){return _(x)===c},Mt.isElement=function(x){return typeof x=="object"&&x!==null&&x.$$typeof===t},Mt.isForwardRef=function(x){return _(x)===h},Mt.isFragment=function(x){return _(x)===a},Mt.isLazy=function(x){return _(x)===b},Mt.isMemo=function(x){return _(x)===y},Mt.isPortal=function(x){return _(x)===n},Mt.isProfiler=function(x){return _(x)===o},Mt.isStrictMode=function(x){return _(x)===i},Mt.isSuspense=function(x){return _(x)===v},Mt.isSuspenseList=function(x){return _(x)===p},Mt.isValidElementType=function(x){return typeof x=="string"||typeof x=="function"||x===a||x===o||x===i||x===v||x===p||x===E||typeof x=="object"&&x!==null&&(x.$$typeof===b||x.$$typeof===y||x.$$typeof===c||x.$$typeof===s||x.$$typeof===h||x.$$typeof===C||x.getModuleId!==void 0)},Mt.typeOf=_,Mt}var bb;function LR(){return bb||(bb=1,Hv.exports=jR()),Hv.exports}var Pv=LR();const kR=({tabs:t,data:n,itemsPerPage:a=4})=>{const{lang:i}=Kl(),[o,c]=g.useState(t[0].id),s=n[o]||[],[d,h]=g.useState(1),v=Math.ceil(s.length/a),p=(d-1)*a,y=p+a,b=s.slice(p,y),E=C=>{c(C),h(1)};return fe.jsxs(HR,{children:[fe.jsx(PR,{children:t.map(C=>fe.jsx(BR,{isActive:C.id===o,onClick:()=>E(C.id),children:i==="en"?C.labelEn:C.label},C.id))}),fe.jsxs(VR,{children:[fe.jsx(UR,{children:b.map(C=>fe.jsx(qR,{onClick:()=>window.location.href=C.url,role:"link",tabIndex:0,onKeyPress:_=>{_.key==="Enter"&&(window.location.href=C.url)},children:fe.jsx(FR,{children:C.title})},C.id))}),v>1&&fe.jsxs(IR,{children:[fe.jsx(Sb,{onClick:()=>h(C=>Math.max(C-1,1)),disabled:d===1,children:"上一页"}),fe.jsxs(GR,{children:[d," / ",v]}),fe.jsx(Sb,{onClick:()=>h(C=>Math.min(C+1,v)),disabled:d===v,children:"下一页"})]})]})]})},HR=qe.div`
+ */var yb;function jR(){if(yb)return Mt;yb=1;var t=Symbol.for("react.element"),n=Symbol.for("react.portal"),a=Symbol.for("react.fragment"),i=Symbol.for("react.strict_mode"),o=Symbol.for("react.profiler"),c=Symbol.for("react.provider"),s=Symbol.for("react.context"),d=Symbol.for("react.server_context"),h=Symbol.for("react.forward_ref"),v=Symbol.for("react.suspense"),p=Symbol.for("react.suspense_list"),y=Symbol.for("react.memo"),b=Symbol.for("react.lazy"),E=Symbol.for("react.offscreen"),C;C=Symbol.for("react.module.reference");function _(x){if(typeof x=="object"&&x!==null){var R=x.$$typeof;switch(R){case t:switch(x=x.type,x){case a:case o:case i:case v:case p:return x;default:switch(x=x&&x.$$typeof,x){case d:case s:case h:case b:case y:case c:return x;default:return R}}case n:return R}}}return Mt.ContextConsumer=s,Mt.ContextProvider=c,Mt.Element=t,Mt.ForwardRef=h,Mt.Fragment=a,Mt.Lazy=b,Mt.Memo=y,Mt.Portal=n,Mt.Profiler=o,Mt.StrictMode=i,Mt.Suspense=v,Mt.SuspenseList=p,Mt.isAsyncMode=function(){return!1},Mt.isConcurrentMode=function(){return!1},Mt.isContextConsumer=function(x){return _(x)===s},Mt.isContextProvider=function(x){return _(x)===c},Mt.isElement=function(x){return typeof x=="object"&&x!==null&&x.$$typeof===t},Mt.isForwardRef=function(x){return _(x)===h},Mt.isFragment=function(x){return _(x)===a},Mt.isLazy=function(x){return _(x)===b},Mt.isMemo=function(x){return _(x)===y},Mt.isPortal=function(x){return _(x)===n},Mt.isProfiler=function(x){return _(x)===o},Mt.isStrictMode=function(x){return _(x)===i},Mt.isSuspense=function(x){return _(x)===v},Mt.isSuspenseList=function(x){return _(x)===p},Mt.isValidElementType=function(x){return typeof x=="string"||typeof x=="function"||x===a||x===o||x===i||x===v||x===p||x===E||typeof x=="object"&&x!==null&&(x.$$typeof===b||x.$$typeof===y||x.$$typeof===c||x.$$typeof===s||x.$$typeof===h||x.$$typeof===C||x.getModuleId!==void 0)},Mt.typeOf=_,Mt}var bb;function LR(){return bb||(bb=1,Hv.exports=jR()),Hv.exports}var Pv=LR();const kR=({tabs:t,data:n,itemsPerPage:a=4})=>{const{lang:i}=Kl(),[o,c]=g.useState(t[0].id),s=n[o]||[],[d,h]=g.useState(1),v=Math.ceil(s.length/a),p=(d-1)*a,y=p+a,b=s.slice(p,y),E=C=>{c(C),h(1)};return fe.jsxs(HR,{children:[fe.jsx(PR,{children:t.map(C=>fe.jsx(BR,{$isActive:C.id===o,onClick:()=>E(C.id),$isEnglish:i==="en",children:i==="en"?C.labelEn:C.label},C.id))}),fe.jsxs(VR,{children:[fe.jsx(UR,{children:b.map(C=>fe.jsx(qR,{onClick:()=>window.location.href=C.url,role:"link",tabIndex:0,onKeyPress:_=>{_.key==="Enter"&&(window.location.href=C.url)},children:fe.jsx(FR,{children:C.title})},C.id))}),v>1&&fe.jsxs(IR,{children:[fe.jsx(Sb,{onClick:()=>h(C=>Math.max(C-1,1)),disabled:d===1,children:"上一页"}),fe.jsxs(GR,{children:[d," / ",v]}),fe.jsx(Sb,{onClick:()=>h(C=>Math.min(C+1,v)),disabled:d===v,children:"下一页"})]})]})]})},HR=qe.div`
   background: var(--card-bg);      /* 背景颜色 */
   border-radius: 12px;            /* 圆角大小 */
   padding: 1rem;                  /* 内边距 */
@@ -283,15 +283,20 @@ ${o}
 `,BR=qe.button`
   flex: 1;
   
-  background: ${({isActive:t})=>t?"var(--tab-bg)":"transparent"};
-  color: ${({isActive:t})=>t?"var(--text)":"var(--accent)"};
+  background: ${({$isActive:t})=>t?"var(--tab-bg)":"transparent"};
+  color: ${({$isActive:t})=>t?"var(--text)":"var(--accent)"};
   border: none;
   padding: 0.5rem 0;
-  font-weight: ${({isActive:t})=>t?600:500};
+  font-weight: ${({$isActive:t})=>t?600:500};
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;  /* 移除点击时的黑框 */
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: ${({$isEnglish:t})=>t?"0.9rem":"1rem"};
+  }
 
   // 鼠标悬停时的样式
   &:hover {
@@ -302,10 +307,14 @@ ${o}
   &:focus {
     outline: none;  /* 确保在focus状态下也没有黑框 */
   }
+  
 `,VR=qe.div`
   height: 235px;  // 固定高度
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `,UR=qe.div`
   flex: 1;
   overflow-y: auto;
@@ -345,6 +354,11 @@ ${o}
 `,FR=qe.div`
   color: var(--text);
   flex: 1;
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `,IR=qe.div`
   display: flex;
   justify-content: center;
@@ -356,12 +370,17 @@ ${o}
   background: var(--bg);
   color: var(--text);
   border: none;
-  padding: 0.35rem 0.75rem ;
+  padding: 0.35rem 0.75rem;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
 
   &:hover:not(:disabled) {
     background: var(--accent);
@@ -532,6 +551,7 @@ html body {
     font-size: 1.2rem;
   }
   @media (max-width: 768px) {
+    
     height: auto; /* 在移动端自适应高度 */
   }
 `,X1=qe.div`
@@ -550,13 +570,15 @@ html body {
 `,A$=qe.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 两列布局 */
-  gap: 20px; /* 卡片之间的间距 */
-  
+  gap: 15px; /* 卡片之间的间距 */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* 在移动端改为单列布局 */
+  }
   
 `,$$=[{id:"submitted",label:"在投",labelEn:"Submitted"},{id:"papers",label:"论文",labelEn:"Papers"},{id:"patents",label:"专利",labelEn:"Patents"},{id:"projects",label:"课题",labelEn:"Projects"}],z$={submitted:[{id:"1",title:"Mapping Instruction to Text Diffusion Space for Diverse Text Generation",url:"https://ant.design/components/icon-cn"},{id:"2",title:"From Expert-Driven to AI-Driven: A New Framework for User-Centric Psychological Scale Item Generation Using Large Language Models",url:"https://ant.design/components/icon-cn"}],papers:[{id:"1",title:"Exploring Word Composition Knowledge In Language Usages, KSEM 2024",url:"https://link.springer.com/chapter/10.1007/978-981-97-5501-1_5"},{id:"2",title:"Unsupervised Paraphrasing under Syntax Knowledge, AAAI 2023",url:"https://dl.acm.org/doi/10.1609/aaai.v37i11.26558"}],patents:[{id:"1",title:"基于扩散模型的多样性可控文本生成方法和装置, ZL 2024 1 1008772.X",url:"https://zhuanli.tianyancha.com/c407b31ca078e74d9d7a0905beac05dc"},{id:"2",title:"一种面向数据增强的词汇组合知识建模方法及装置, ZL 2024 1 0330986.2",url:"https://splab.sdu.edu.cn/info/1015/2267.htm"},{id:"3",title:"一种基于子树库的多样性可控文本改写方法及装置, ZL 2024 1 0634369.1",url:"https://xueshu.baidu.com/usercenter/paper/show?paperid=173u0xt0nk3k0au0sv4q0ry0eb641909&site=xueshu_se"}],projects:[{id:"1",title:"基于扩散模型的多样性文本生成",url:"https://zhuanli.tianyancha.com/c407b31ca078e74d9d7a0905beac05dc"},{id:"2",title:"文本空间与指令空间对齐",url:"https://splab.sdu.edu.cn/info/1015/2267.htm"},{id:"3",title:"结构型知识融入的数据生成方法",url:"https://xueshu.baidu.com/usercenter/paper/show?paperid=173u0xt0nk3k0au0sv4q0ry0eb641909&site=xueshu_se"},{id:"4",title:"心理测试量表项目多维度评估框架",url:"https://xueshu.baidu.com/usercenter/paper/show?paperid=173u0xt0nk3k0au0sv4q0ry0eb641909&site=xueshu_se"}]},N$=qe.div`
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
 `,D$=qe.section`
   display: flex;
   flex-direction: row;
@@ -639,16 +661,12 @@ html body {
   margin-top: 3rem;
 `,B$=qe.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 
     - auto-fill: 自动填充列数，尽可能多地创建列
-    - minmax(300px, 1fr): 每列最小宽度300px，最大宽度1fr(剩余空间的一份)
+    - minmax(200px, 1fr): 每列最小宽度300px，最大宽度1fr(剩余空间的一份)
     - 1fr: 弹性单位，表示占用剩余空间的一份
   */
   gap: 2rem;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 `,Q1=qe.a` /* Changed from styled(Link) to styled.a */
   display: block;
   padding: 1.5rem;
@@ -687,7 +705,7 @@ html body {
 `,eS=qe.span`
   color: var(--primary);
   font-weight: 500;
-`,ah=()=>{const{t}=Kl();return fe.jsxs(N$,{children:[fe.jsxs(D$,{children:[fe.jsx(j$,{children:fe.jsx("img",{src:K3,alt:t.author})}),fe.jsxs(L$,{children:[fe.jsx(k$,{children:t.author}),fe.jsx(Y1,{children:t.profile_desc}),fe.jsx(Y1,{children:t.bio}),fe.jsxs(H$,{children:[fe.jsx(rh,{href:"https://github.com/your-github",target:"_blank",rel:"noopener noreferrer",title:"GitHub",children:fe.jsx(AR,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})}),fe.jsx(rh,{href:"https://www.zhihu.com/",target:"_blank",rel:"noopener noreferrer",title:"Zhihu",children:fe.jsx(DR,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})}),fe.jsx(rh,{href:"mailto:your-email@example.com",title:"Email",children:fe.jsx(_R,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})})]})]})]}),fe.jsx(O$,{}),fe.jsx("div",{children:fe.jsx(kR,{tabs:$$,data:z$,defaultTabId:"latest"})}),fe.jsx(P$,{children:fe.jsxs(B$,{children:[fe.jsxs(Q1,{href:"https://blog.csdn.net/qq_45104795?type=blog",children:[fe.jsx(Z1,{children:t.tech_blog}),fe.jsx(W1,{children:t.tech_blog_desc}),fe.jsx(J1,{children:fe.jsx(eS,{children:t.tech_blog_link})})]}),fe.jsxs(Q1,{href:"https://weibo.com/u/6885353494",children:[fe.jsx(Z1,{children:t.life_blog}),fe.jsx(W1,{children:t.life_blog_desc}),fe.jsx(J1,{children:fe.jsx(eS,{children:t.life_blog_link})})]})]})})]})},V$=L3`
+`,ah=()=>{const{t}=Kl();return fe.jsxs(N$,{children:[fe.jsxs(D$,{children:[fe.jsx(j$,{children:fe.jsx("img",{src:K3,alt:t.author})}),fe.jsxs(L$,{children:[fe.jsx(k$,{children:t.author}),fe.jsx(Y1,{children:t.profile_desc}),fe.jsx(Y1,{children:t.bio}),fe.jsxs(H$,{children:[fe.jsx(rh,{href:"https://github.com/your-github",target:"_blank",rel:"noopener noreferrer",title:"GitHub",children:fe.jsx(AR,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})}),fe.jsx(rh,{href:"https://www.zhihu.com/people/yi-xie-zhi-qiu-41-95",target:"_blank",rel:"noopener noreferrer",title:"Zhihu",children:fe.jsx(DR,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})}),fe.jsx(rh,{href:"https://space.bilibili.com/506432343?spm_id_from=333.1387.follow.user_card.click",title:"Email",children:fe.jsx(_R,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})})]})]})]}),fe.jsx(O$,{}),fe.jsx("div",{children:fe.jsx(kR,{tabs:$$,data:z$,defaultTabId:"latest"})}),fe.jsx(P$,{children:fe.jsxs(B$,{children:[fe.jsxs(Q1,{href:"https://blog.csdn.net/qq_45104795?type=blog",children:[fe.jsx(Z1,{children:t.tech_blog}),fe.jsx(W1,{children:t.tech_blog_desc}),fe.jsx(J1,{children:fe.jsx(eS,{children:t.tech_blog_link})})]}),fe.jsxs(Q1,{href:"https://weibo.com/u/6885353494",children:[fe.jsx(Z1,{children:t.life_blog}),fe.jsx(W1,{children:t.life_blog_desc}),fe.jsx(J1,{children:fe.jsx(eS,{children:t.life_blog_link})})]})]})})]})},V$=L3`
   :root {
     --bg: #fff;
     --text:  #181818;
