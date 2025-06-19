@@ -193,13 +193,14 @@ Please change the parent <Route path="${T}"> to <Route path="${T==="/"?"*":`${T}
     outline: none; /* 移除点击后的黑色边框 */
   }
   @media (max-width: 768px) {
-    width: 30px; /* 设置固定宽度 */
+    width: 35px; /* 设置固定宽度 */
     
   }
 `,QA=Pt(xb)`
   width: 75px; /* 根据内容调整 */
   @media (max-width: 768px) {
-    width: 30px; /* 设置固定宽度 */
+    width: 40px; /* 设置固定宽度 */
+     padding: 0.3em 0;
   }
 `,Zk=()=>{const{t:n}=cf(),{theme:e,toggleTheme:t}=zB(),{toggleLanguage:i}=cf(),[r,s]=E.useState(!1),l=()=>{s(!r)};return Oe.jsxs(Gk,{children:[Oe.jsx($k,{children:"HYC Blog"}),Oe.jsxs(qk,{children:[Oe.jsx(xb,{onClick:t,title:n.theme_toggle_label,children:e==="light"?"🌙":"☀️"}),Oe.jsx(QA,{onClick:i,children:n.lang_toggle_label})]}),Oe.jsx(Kk,{onClick:l,children:"☰"}),Oe.jsx(jk,{$isOpen:r,onMouseLeave:()=>s(!1),children:Oe.jsxs(Wk,{children:[Oe.jsx(Xk,{to:"/",onClick:()=>s(!1),children:n.home}),Oe.jsx(ZA,{href:"https://weibo.com/u/6885353494",target:"_blank",rel:"noopener noreferrer",onClick:()=>s(!1),children:n.tech_blog}),Oe.jsx(ZA,{href:"https://blog.csdn.net/qq_45104795?type=blog",target:"_blank",rel:"noopener noreferrer",onClick:()=>s(!1),children:n.life_blog})]})}),Oe.jsxs(Yk,{children:[Oe.jsx(xb,{onClick:t,title:n.theme_toggle_label,children:e==="light"?"🌙":"☀️"}),Oe.jsx(QA,{onClick:i,children:n.lang_toggle_label})]})]})},k_=({children:n})=>{const{t:e}=cf();return Oe.jsxs("div",{className:"container",children:[Oe.jsx(Zk,{}),Oe.jsx("main",{children:n}),Oe.jsxs("footer",{children:["© 2025 HYC Blog. ",e.all_rights_reserved]})]})},Qk=""+new URL("hyc-DvsQNzsi.png",import.meta.url).href,TL=E.createContext({});var V_={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
@@ -689,6 +690,9 @@ html body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--primary);
+  @media(max-width: 440px){
+    font-size: 1.2rem;
+  }
 `,G2=Pt.p`
   font-size: 1rem;
   line-height: 1.5;
@@ -699,6 +703,9 @@ html body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   margin-bottom: 1rem;
+  @media(max-width: 440px){
+    font-size: 0.9rem;
+  }
 `,$2=Pt.div`
   display: flex;
   justify-content: space-between;
@@ -707,6 +714,9 @@ html body {
 `,j2=Pt.span`
   color: var(--primary);
   font-weight: 500;
+  @media(max-width: 440px){
+    font-size: 0.9rem;
+  }
 `,cx=()=>{const{t:n}=cf();return Oe.jsxs(zj,{children:[Oe.jsxs(Bj,{children:[Oe.jsx(kj,{children:Oe.jsx("img",{src:Qk,alt:n.author})}),Oe.jsxs(Vj,{children:[Oe.jsx(Hj,{children:n.author}),Oe.jsx(k2,{children:n.profile_desc}),Oe.jsx(k2,{children:n.bio}),Oe.jsxs(Gj,{children:[Oe.jsx(lx,{href:"https://github.com/hyc619",target:"_blank",rel:"noopener noreferrer",title:"GitHub",children:Oe.jsx(IV,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})}),Oe.jsx(lx,{href:"https://www.zhihu.com/people/yi-xie-zhi-qiu-41-95",target:"_blank",rel:"noopener noreferrer",title:"Zhihu",children:Oe.jsx(BV,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})}),Oe.jsx(lx,{href:"https://space.bilibili.com/506432343?spm_id_from=333.1387.follow.user_card.click",title:"Email",children:Oe.jsx(PV,{style:{fontSize:"26px",display:"flex",alignItems:"center",justifyContent:"center"}})})]})]})]}),Oe.jsx(Nj,{}),Oe.jsx("div",{children:Oe.jsx(HV,{tabs:Uj,data:Fj,defaultTabId:"latest"})}),Oe.jsx($j,{children:Oe.jsxs(jj,{children:[Oe.jsxs(V2,{href:"https://blog.csdn.net/qq_45104795?type=blog",children:[Oe.jsx(H2,{children:n.tech_blog}),Oe.jsx(G2,{children:n.tech_blog_desc}),Oe.jsx($2,{children:Oe.jsx(j2,{children:n.tech_blog_link})})]}),Oe.jsxs(V2,{href:"https://weibo.com/u/6885353494",children:[Oe.jsx(H2,{children:n.life_blog}),Oe.jsx(G2,{children:n.life_blog_desc}),Oe.jsx($2,{children:Oe.jsx(j2,{children:n.life_blog_link})})]})]})})]})};/**
  * @license
  * Copyright 2010-2025 Three.js Authors
@@ -4667,7 +4677,7 @@ void main() {
   position: absolute;
   top: calc(-1 * 20px / 2);
   left: calc(-1 * 20px / 2);
-`,uae=()=>{const n=G3(),[e,t]=E.useState(!0),[i,r]=E.useState(!1),[s,l]=E.useState(!1);let c=100;typeof window<"u"&&(window.matchMedia("(max-width: 440px)").matches?c=25:window.matchMedia("(max-width: 768px)").matches&&(c=50)),E.useEffect(()=>{const h=setTimeout(()=>{t(!1),setTimeout(()=>{r(!0)},1e3)},5e3),p=setTimeout(()=>{l(!0)},2500);return()=>{clearTimeout(h),clearTimeout(p)}},[]);const u=()=>{n("/main")},d=[aee,see,oee,lee,cee,uee,fee,dee,hee,mee,pee,gee,vee];return Oe.jsxs(nae,{children:[Oe.jsx(sae,{children:Oe.jsxs(oae,{children:[d.map((h,p)=>Oe.jsx(lae,{className:"content__img",children:Oe.jsx(cae,{className:"content__img-inner",style:{backgroundImage:`url(${h})`}})},p)),i&&Oe.jsx(ree,{items:d,variant:1,enableClick:!0})]})}),Oe.jsx(aae,{visible:e,children:Oe.jsx(XJ,{followCursor:!0,colors:["rgb(233, 62, 147)","rgb(255, 255, 255)"],count:c,maxSize:1.2,minSize:.5,gravity:.3,friction:.998,wallBounce:.9,maxVelocity:.2})}),Oe.jsxs(iae,{children:[Oe.jsx(L3,{children:"生日快乐！"}),s&&Oe.jsx(L3,{children:Oe.jsx(tae,{text:"欢迎来到韩雨辰的博客",animateOn:"view",speed:100,maxIterations:100,sequential:!0,revealDirection:"start",useOriginalCharsOnly:!0})}),Oe.jsx(qJ,{padding:80,disabled:!1,magnetStrength:30,activeTransition:"transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)",inactiveTransition:"transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",children:i&&Oe.jsx(rae,{onClick:u,children:"进入主页"})})]})]})},fae=Hk`
+`,uae=()=>{const n=G3(),[e,t]=E.useState(!0),[i,r]=E.useState(!1),[s,l]=E.useState(!1);let c=100;typeof window<"u"&&(window.matchMedia("(max-width: 440px)").matches?c=30:window.matchMedia("(max-width: 768px)").matches&&(c=50)),E.useEffect(()=>{const h=setTimeout(()=>{t(!1),setTimeout(()=>{r(!0)},1e3)},5e3),p=setTimeout(()=>{l(!0)},2500);return()=>{clearTimeout(h),clearTimeout(p)}},[]);const u=()=>{n("/main")},d=[aee,see,oee,lee,cee,uee,fee,dee,hee,mee,pee,gee,vee];return Oe.jsxs(nae,{children:[Oe.jsx(sae,{children:Oe.jsxs(oae,{children:[d.map((h,p)=>Oe.jsx(lae,{className:"content__img",children:Oe.jsx(cae,{className:"content__img-inner",style:{backgroundImage:`url(${h})`}})},p)),i&&Oe.jsx(ree,{items:d,variant:1,enableClick:!0})]})}),Oe.jsx(aae,{visible:e,children:Oe.jsx(XJ,{followCursor:!0,colors:["rgb(233, 62, 147)","rgb(255, 255, 255)"],count:c,maxSize:1.2,minSize:.5,gravity:.3,friction:.998,wallBounce:.9,maxVelocity:.2})}),Oe.jsxs(iae,{children:[Oe.jsx(L3,{children:"生日快乐！"}),s&&Oe.jsx(L3,{children:Oe.jsx(tae,{text:"欢迎来到韩雨辰的博客",animateOn:"view",speed:100,maxIterations:100,sequential:!0,revealDirection:"start",useOriginalCharsOnly:!0})}),Oe.jsx(qJ,{padding:80,disabled:!1,magnetStrength:30,activeTransition:"transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)",inactiveTransition:"transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",children:i&&Oe.jsx(rae,{onClick:u,children:"进入主页"})})]})]})},fae=Hk`
   :root {
     --bg: #fff;
     --text:  #181818;
